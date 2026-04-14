@@ -210,7 +210,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Data Loading & Initialization
-df = pd.read_csv('food_facts_final.csv')
+SHEET_ID = "1FzOe2FoWMU92MZVqhodN-CLRFRdwadbo2PGHGPlUREw"
+URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv"
+
+@st.cache_data
+def load_data():
+    return pd.read_csv(URL)
+
+df = load_data()
 
 # Plotly Global Theme Rules
 plotly_theme = dict(

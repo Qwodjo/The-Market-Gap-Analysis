@@ -8,7 +8,7 @@ Analysis of 500,000 food products from the Open Food Facts database reveals a st
 
 Link to Notebook: [Notebook](https://colab.research.google.com/drive/1O5-KkwP4qTUbHrNJR2uYaPykfiP4m5NB?usp=sharing)
 
-Link to Dashboard: 
+Link to Dashboard: [Dashboard](https://the-market-gap-analysis-acr6jm3ngszgug788m2nsw.streamlit.app/)
 
 Link to Presentation: [Presentation](https://docs.google.com/presentation/d/19g7-8PUahfGZObz6wb-vu8NDaOUoIws-/edit?usp=sharing&ouid=110275775221805823195&rtpof=true&sd=true)
 
