@@ -1,3 +1,43 @@
+## A. Executive Summary
+
+Analysis of 500,000 food products from the Open Food Facts database reveals a stark market gap in the snack industry. The vast majority of snack products (93.3%) are clustered in the high sugar, low protein space, leaving the high protein, low sugar quadrant almost completely empty. Of all categorized snack products, only 282 exist in the Protein & Nutrition Bars category, compared to over 5,000 in Chocolate & Candy alone. Based on the data, the biggest market opportunity is in Protein & Nutrition Bars, specifically targeting products with 58.1g of protein and less than 3.4g of sugar. The top three protein sources driving high protein products are milk (39.6%), peanuts (23.2%), and soy (14.5%), giving the R&D team a clear formulation starting point.
+
+
+
+## B. Project Links
+
+Link to Notebook: [Notebook](https://colab.research.google.com/drive/1O5-KkwP4qTUbHrNJR2uYaPykfiP4m5NB?usp=sharing)
+
+Link to Dashboard: 
+
+Link to Presentation: [Presentation](https://docs.google.com/presentation/d/19g7-8PUahfGZObz6wb-vu8NDaOUoIws-/edit?usp=sharing&ouid=110275775221805823195&rtpof=true&sd=true)
+
+
+## C. Technical Explanation
+
+### Data Cleaning
+Of the 500,000 products sampled, only 99,694 (19.9%) had complete nutritional data for both sugar and protein content,reflecting the crowdsourced nature of the Open Food Facts database. We dropped all rows missing product_name, sugars_100g or proteins_100g and filtered out biologically impossible values where any nutrient exceeded 100g per 100g of product. This left us with a clean verified dataset of 99,694 products for analysis.
+
+### Candidate's Choice — Health Score Analysis
+I added a Health Score metric because we wanted to give the client one single number that captures the full nutritional picture of every product and every category.
+
+The formula is:
+
+Health Score = (Protein x 2) + (Fiber x 1.5) - (Sugar x 1) - (Fat x 0.5)
+
+I chose this addition because:
+- It simplifies decision making — instead of comparing 4 separate nutrients the client sees one number per category
+- It quantifies the competitive gap — Protein & Nutrition Bars score 96.1 while Chocolate & Candy score -34.7, a 130 point gap that powerfully confirms the Blue Ocean opportunity
+- It gives the R&D team a clear numeric target to beat
+- It demonstrates business acumen beyond simply answering the brief
+
+
+
+
+
+
+
+
 # Project Brief: The "Sugar Trap" Market Gap Analysis
 
 **Client:** Helix CPG Partners (Strategic Food & Beverage Consultancy)  
