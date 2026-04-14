@@ -8,6 +8,3 @@ env/
 __pycache__/
 *.pyc
 
-# Data files
-*.csv
-food_facts_final.csv
