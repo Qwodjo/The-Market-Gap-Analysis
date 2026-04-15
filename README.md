@@ -1,6 +1,6 @@
 ## A. Executive Summary
 
-Analysis of 500,000 food products from the Open Food Facts database reveals a stark market gap in the snack industry. The vast majority of snack products (93.3%) are clustered in the high sugar, low protein space, leaving the high protein, low sugar quadrant almost completely empty. Of all categorized snack products, only 282 exist in the Protein & Nutrition Bars category, compared to over 5,000 in Chocolate & Candy alone. Based on the data, the biggest market opportunity is in Protein & Nutrition Bars, specifically targeting products with 58.1g of protein and less than 3.4g of sugar. The top three protein sources driving high protein products are milk (39.6%), peanuts (23.2%), and soy (14.5%), giving the R&D team a clear formulation starting point.
+My analysis of 500,000 food products from the Open Food Facts database reveals a stark market gap in the snack industry. I found that the vast majority of snack products (93.3%) are clustered in the high sugar, low protein space, leaving the high protein, low sugar quadrant almost completely empty. Of all categorized snack products, I noted that only 282 exist in the Protein & Nutrition Bars category, compared to over 5,000 in Chocolate & Candy alone. Based on my data, the biggest market opportunity is in Protein & Nutrition Bars, specifically targeting products with 58.1g of protein and less than 3.4g of sugar. I identified the top three protein sources driving high protein products as milk (39.6%), peanuts (23.2%), and soy (14.5%), giving the R&D team a clear formulation starting point.
 
 
 
@@ -18,10 +18,10 @@ Link to Video: [YouTube](https://youtu.be/xk9Ee4cujrM)
 ## C. Technical Explanation
 
 ### Data Cleaning
-Of the 500,000 products sampled, only 99,694 (19.9%) had complete nutritional data for both sugar and protein content,reflecting the crowdsourced nature of the Open Food Facts database. We dropped all rows missing product_name, sugars_100g or proteins_100g and filtered out biologically impossible values where any nutrient exceeded 100g per 100g of product. This left us with a clean verified dataset of 99,694 products for analysis.
+Of the 500,000 products sampled, I found only 99,694 (19.9%) had complete nutritional data for both sugar and protein content,reflecting the crowdsourced nature of the Open Food Facts database. I dropped all rows missing product_name, sugars_100g or proteins_100g and filtered out biologically impossible values where any nutrient exceeded 100g per 100g of product. This left me with a clean verified dataset of 99,694 products for analysis.
 
 ### Candidate's Choice — Health Score Analysis
-I added a Health Score metric because we wanted to give the client one single number that captures the full nutritional picture of every product and every category.
+I added a Health Score metric because I wanted to give the client one single number that captures the full nutritional picture of every product and every category.
 
 The formula is:
 
