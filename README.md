@@ -12,6 +12,8 @@ Link to Dashboard: [Dashboard](https://the-market-gap-analysis-acr6jm3ngszgug788
 
 Link to Presentation: [Presentation](https://docs.google.com/presentation/d/19g7-8PUahfGZObz6wb-vu8NDaOUoIws-/edit?usp=sharing&ouid=110275775221805823195&rtpof=true&sd=true)
 
+Link to Video: [YouTube](https://youtu.be/xk9Ee4cujrM)
+
 
 ## C. Technical Explanation
 
